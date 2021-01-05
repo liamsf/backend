@@ -1,6 +1,3 @@
-# NO LONGER BEING UPDATED
-im not updating this anymore.
-
 # Wrapper
 This is a Goanimate Legacy Video Maker Remake built in [Node.js](https://nodejs.org/)
 
