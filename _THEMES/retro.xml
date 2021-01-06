@@ -1245,7 +1245,7 @@
     <action id="think.swf" name="Think" loop="Y" totalframe="75" enable="Y" aid="4859"/>
     <action id="cry.swf" name="Cry" loop="Y" totalframe="24" enable="Y" aid="4860"/>
   </char>
-  <char id="imagenyMatchBoy" name="Match Boy (Imageny's Mod)" thumb="stand.swf" facing="left" default="stand.swf" motion="walk.swf" enable="Y" is_premium="N" aid="4806" money="0" sharing="0">
+  <char id="xomMatchBoy" name="Match Boy (v2)" thumb="stand.swf" facing="left" default="stand.swf" motion="walk.swf" enable="Y" is_premium="N" aid="4806" money="0" sharing="0">
     <action id="stand.swf" name="Stand" loop="Y" totalframe="72" enable="Y" aid="4807"/>
     <motion id="walk.swf" name="Walk" loop="Y" totalframe="8" enable="Y" aid="4808"/>
     <action id="angry.swf" name="angry" loop="Y" totalframe="50" enable="Y" aid="4809"/>
@@ -1274,7 +1274,7 @@
     <action id="murder02.swf" name="Murdered (b)" loop="Y" totalframe="50" enable="Y" aid="4832"/>
     <action id="kill06.swf" name="Kill" loop="Y" totalframe="20" enable="Y" aid="4833"/>
   </char>
-  <char id="imagenyMatchGirl" name="Match Girl (Imageny's Mod)" thumb="stand.swf" facing="left" default="stand.swf" motion="walk.swf" enable="Y" is_premium="N" aid="4834" money="0" sharing="0">
+  <char id="xomMatchGirl" name="Match Girl (v2)" thumb="stand.swf" facing="left" default="stand.swf" motion="walk.swf" enable="Y" is_premium="N" aid="4834" money="0" sharing="0">
     <action id="stand.swf" name="Stand" loop="Y" totalframe="4" enable="Y" aid="4835"/>
     <motion id="walk.swf" name="Walk" loop="Y" totalframe="58" enable="Y" aid="4836"/>
     <action id="angry.swf" name="angry" loop="Y" totalframe="50" enable="Y" aid="4837"/>
@@ -1305,6 +1305,14 @@
     <action id="cat2.swf" name="Cat Face (b)" loop="Y" totalframe="65" enable="Y" aid="9992"/>
     <action id="flirty.swf" name="Flirty" loop="Y" totalframe="50" enable="Y" aid="2020"/>
     <action id="bored2.swf" name="Bored (b)" loop="Y" totalframe="40" enable="Y" aid="2019"/>
+  </char>
+  <char id="xomMcFaddenHuman" name="McFadden (Human form)" thumb="stand.swf" facing="left" default="stand.swf" motion="levitate.swf" enable="Y" is_premium="N" aid="4834" money="0" sharing="0">
+    <action id="stand.swf" name="Stand" loop="Y" totalframe="4" enable="Y" aid="4835"/>
+    <motion id="walk.swf" name="Walk" loop="Y" totalframe="58" enable="Y" aid="4836"/>
+    <action id="talk.swf" name="Talk" loop="Y" totalframe="50" enable="Y" aid="4850"/>
+    <action id="levitate.swf" name="Levitate" loop="Y" totalframe="50" enable="Y" aid="4851"/>
+    <action id="furious.swf" name="Furious" loop="Y" totalframe="70" enable="Y" aid="4852"/>
+    <action id="cry.swf" name="Cry" loop="Y" totalframe="16" enable="Y" aid="4853"/>
   </char>
   <char id="blue_snuggle" name="Blue Snuggie" thumb="standing.swf" facing="left" default="standing.swf" motion="walk.swf" enable="Y" is_premium="N" aid="5945" money="0" sharing="0">
     <action id="standing.swf" name="standing" loop="Y" totalframe="44" enable="Y" aid="5946"/>

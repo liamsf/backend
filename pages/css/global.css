@@ -6,10 +6,11 @@ this css has the general header/footer layout stuff
 general
 **/
 html,body{
-	background: #fff;
-	color: #474747;
+	background: #0c0c0c;
+	color: #fff;
 	font: 16px/1.5 'Sailec', Arial, sans-serif;
-	width:100%;height:100%;
+	width: 100%;
+	height: 100%;
 }
 body {
 	display: flex; 
@@ -21,19 +22,44 @@ body {
 header
 **/
 header {
+	position: sticky;
+    top: 0;
+    width: 100%;
+}
+.header_content {
 	/* style */
-	background: linear-gradient(90deg, rgba(0,181,255,1) 0%, rgba(255,0,155,1) 100%);
+	align-content: center;
+    background: linear-gradient(360deg, #141414 0%, #2b2b2b 100%);
 	color: #fff;
 	text-align: center;
+	box-shadow: 0px 1px 6px 0px #00000082;
 	/* layout */
-	height: 44px;
-	padding: 0 15px;
-	display: flex;
-	justify-content: space-between;
+	padding-bottom: 13px;
+	padding: 0 30px;
+    display: inline-block;
+    width: 100%;
+}
+@media (min-width: 1030px) {
+	.header_content {
+		padding-bottom: 0;
+		height: 55px;
+	}
+}
+
+#logo_container {
+	float: left;
 }
 #logo {
-	margin-top: 4px;
+	margin-top: 10px;
 	height: 35px;
+}
+span.version {
+	color: #fff;
+	padding-left: 4px;
+	font-weight: 700;
+}
+#headbuttons {
+	float: right;
 }
 /* buttons */
 .button_big,
@@ -43,24 +69,36 @@ header {
 	text-decoration: none;
 	color: #fff;
 	border-radius: 6px;
+	letter-spacing: 0.5px;
 	/* layout */
 	display: inline-block;
-	padding: 5px 10px;
-	margin: 6px 5px;
+	padding: 7px 10px;
+	margin: 10px 5px;
 }
 .button_big:hover,
 .button_small:hover {
 	cursor: pointer;
 }
 /* small buttons */
-.button_small       { background: #3330 }
-.button_small:hover { background: #fff4; color: #fff }
+.button_small {
+	background: linear-gradient(360deg, #303030 0%, #4d4d4d 100%);
+	box-shadow: inset 0px 1px 0 0px #ffffff1a, 0px 2px 0 0px #0000001f;
+}
+.button_small:hover {
+	background: linear-gradient(360deg, #292929 0%, #404040 100%);
+	color: #d85e27;
+}
 /* big buttons */
-.button_big { background: #fff; width: 160px; color: #ff009b }
+.button_big {
+	background: linear-gradient(360deg, #b13b07 0%, #d85e27 100%);
+	width: 160px;
+	box-shadow: inset 0px 1px 0 0px #ffffff33, 0px 2px 0 0px #0000001f;
 }
 .button_big:hover {
-	text-decoration: underline;
+	background: linear-gradient(360deg, #892d06 0%, #be5423 100%);
+	box-shadow: inset 0px 1px 0 0px #ffffff33, 0px 2px 0 0px #0000001f, inset 0px 0px 0 2px #d85e2700;
 }
+
 
 
 /**
@@ -68,7 +106,7 @@ header dropdowns
 **/
 /* change button margin/padding to fit dropdown */
 .dropdown_contain { padding: 0; margin: 6px 5px; }
-.dropdown_button { margin: 0; padding: 5px 10px; }
+.dropdown_button { margin: 0; padding: 7px 10px; }
 /* make dropdown appear on hover */
 .dropdown_contain:hover>nav {
 	display: block;
@@ -77,8 +115,9 @@ header dropdowns
 /* the dropdown itself */
 .dropdown_menu {
 	/* style */
-	background-color: #444;
 	border-radius: 6px;
+	letter-spacing: 0;
+	font-size: 14px;
 	/* layout */
 	width: 100%;
 	padding: 10px 0;
@@ -99,8 +138,8 @@ header dropdowns
 	padding: 2px 20px;
 }
 .dropdown_menu>a:hover {
-	background: #222;
-	color: #27A0D9;
+	background: #00000070;
+	color: #d85e27;
 	cursor: pointer;
 }
 /* dropdown header and separation */
@@ -113,16 +152,16 @@ header dropdowns
 	padding:2px 20px;
 }
 .dropdown_menu>hr {
-	border: 1px solid #222;
+	border: 1px solid #666;
 	margin: 10px 0;
 }
-
 
 /**
 footer
 **/
 footer{
-	background: #e0e0e0;
+	box-shadow: 0px -1px 6px 0px #00000082;
+	background: linear-gradient(360deg, #141414 0%, #2b2b2b 100%);
 	margin-top: auto; /* footer at the foot */
 	display: flex;
 	justify-content: space-between
@@ -130,10 +169,9 @@ footer{
 footer nav { margin:5px 10px}
 /* links */
 footer a {
-	color: #141414;
+	color: #fff;
 	text-decoration:none;
 	margin: 0 10px;
-	font-weight: bold;
 }
 footer a:hover {
 	text-decoration: underline;

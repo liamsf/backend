@@ -1,0 +1,349 @@
+<title>Theme List</title>
+<link rel="stylesheet" href="../css/themelist.css">
+<link rel="stylesheet" type="text/css" href="../css/modern-normalize.css">
+<link rel="stylesheet" type="text/css" href="../css/global.css">
+<link rel="stylesheet" type="text/css" href="../css/list.css">
+<body>
+	<header>
+		<div>
+			<div>
+				<a href="./"><img src="../assets/logo.png" /></a>
+				<span>VERSIÖN</span>
+			</div>
+			<div>
+				<a class="button_small" onclick="document.getElementById('movie_file').click()">UPLOAD A MOVIE</a>
+				<!-- <a class="button_small" onclick="document.getElementById('character_file').click()">UPLOAD A CHARACTER</a> -->
+	            <!-- I marked it as HTML comment since I haven't gotten character uploading from the video list to work yet. ~xom-->
+				<div class="char_dropdown button_small">
+					<div>CREATE A CHARACTER</div>
+					<menu>
+						<a href="/cc?themeId=family&bs=adam">Adam</a>
+						<a href="/cc?themeId=family&bs=eve">Eve</a>
+						<a href="/cc?themeId=family&bs=bob">Bob</a>
+						<a href="/cc?themeId=family&bs=rocky">Rocky</a>
+						<div></div>
+						<a href="/cc?themeId=business&bs=default">Business</a>
+						<a href="/cc?themeId=business&bs=heavy">Heavy</a>
+						<a href="/cc?themeId=business&bs=kid">Kid</a>
+						<div></div>
+						<a href="/cc?themeId=whiteboard&bs=default">Whiteboard</a>
+						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
+						<div></div>
+						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
+						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
+						<div></div>
+						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
+						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
+						<div></div>
+						<a href="/cc?themeId=cc2&bs=default">Lil' Peepz</a>
+						<div></div>
+						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+						<div></div>
+						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+					</menu>
+				</div>
+				<div class="char_dropdown button_small">
+					<div>BROWSE CHARACTERS</div>
+					<menu>
+						<a href="/cc_browser?themeId=business">Business Friendly</a>
+						<a href="/cc_browser?themeId=whiteboard">Whiteboard Animation</a>
+						<a href="/cc_browser?themeId=family">Comedy World</a>
+						<a href="/cc_browser?themeId=anime">Anime</a>
+						<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
+						<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
+						<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
+						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
+					</menu>
+				</div>
+			</div>
+		</div>
+		<!-- div class="warning"></div> -->
+	</header>
+    <main id="themelist">
+        <h1><center>Pick a theme</center></h1>
+		<h2><center>Standard themes</center></h2>
+		<center>
+		<div id="column1">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=custom">
+		<img src="../assets/themelist/Comedy_World.jpg">
+		<div>Comedy World</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=action">
+		<img src="../assets/themelist/lil_Peepz.jpg">
+		<div>Lil Peepz</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=retro">
+		<img src="../assets/themelist/Cartoon_Classics.jpg">
+		<div>Cartoon Classics</div>
+		</a>
+		</div>
+		</div></center><br>
+		<center>
+		<div id="column2">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=politic2">
+		<img src="../assets/themelist/Election_2012.jpg">
+		<div>Election 2012</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=stick">
+		<img src="../assets/themelist/Stick_Figure.jpg">
+		<div>Stick Figure</div>
+		</a>
+		</div>
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=anime">
+		<img src="../assets/themelist/Anime.jpg">
+		<div>Anime</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center>
+		<div id="column3">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=ninjaanime">
+		<img src="../assets/themelist/Ninja_Anime.jpg">
+		<div>Ninja Anime</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=spacecitizen">
+		<img src="../assets/themelist/Space_Citizens.jpg">
+		<div>Space Citizens</div>
+		</a>
+		</div>
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=chibi">
+		<img src="../assets/themelist/Chibi_Peepz.jpg">
+		<div>Chibi Peepz</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center>
+		<div id="column4">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=ninja">
+		<img src="../assets/themelist/Chibi_Ninjas.jpg">
+		<div>Chibi Ninjas</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=animal">
+		<img src="../assets/themelist/Lil_Petz_World.jpg">
+		<div>Lil Petz World</div>
+		</a>
+		</div>
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=space">
+		<img src="../assets/themelist/Space_Peepz.jpg">
+		<div>Space Peepz</div>
+		</a>
+		</div>
+		</div></center><br>
+		<center>
+		<div id="column5">
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=fullenergy">
+		<img src="../assets/themelist/Full_Energy.png">
+		<div>Full Energy</div>
+		</a>
+		</div>
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=politic">
+		<img src="../assets/themelist/Politics_and_Celebrity.png">
+		<div>Politics & Celebrity</div>
+		</a>
+		</div>
+		</div></center><br>
+		<center><h2>Made-for-business themes*</h2></center>
+		<div id="column6">
+		<center><div class="theme">
+		<a href="http://localhost:4343/go_full?tray=bizmodels">
+		<img src="../assets/themelist/Business_Models.jpg">
+		<div>Business Models</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=sticklybiz">
+		<img src="../assets/themelist/Stickly_Business.jpg">
+		<div>Stickly Business</div>
+		</a>
+		</div>
+		</div></center><br>
+		<center><p>*For legal reasons, these are the only "business themes" included.</p></center><br>
+		<center><h2>Seasonal themes</h2></center>
+		<center>
+		<div id="column7">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=christmas">
+		<img src="../assets/themelist/Holiday_and_Seasonal.png">
+		<div>Holiday & Seasonal</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=monstermsh">
+		<img src="../assets/themelist/Monsters_Mayhem.png">
+		<div>Monsters Mayhem</div>
+		</a>
+		</div>
+		</div></center><br>
+		<center><h2>Licensed themes</h2></center>
+        <center>
+		<div id="column8">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=akon">
+		<img src="../assets/themelist/Akon.jpg">
+		<div>AKON&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=ben10">
+		<img src="../assets/themelist/Ben_10.png">
+		<div>Ben 10&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=botdf">
+		<img src="../assets/themelist/botdf.jpg">
+		<div>Blood On The Dance Floor&#8482;</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center>
+		<div id="column9">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=bunny">
+		<img src="../assets/themelist/Happy_Bunny.png">
+		<div>It's Happy Bunny&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=chowder">
+		<img src="../assets/themelist/Chowder.png">
+		<div>Chowder&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=domo">
+		<img src="../assets/themelist/Domo.png">
+		<div>Domo&#8482;</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center>
+		<div id="column10">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=monkeytalk">
+		<img src="../assets/themelist/SuperRica_&_Rashy.png">
+		<div>SuperRica & Rashy&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=sf">
+		<img src="../assets/themelist/Street_Fighter.png">
+		<div>Street Fighter&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=startrek">
+		<img src="../assets/themelist/Star_Trek_Quags.JPG">
+		<div>Star Trek&#8482; Quogs</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center>
+		<div id="column11">
+		<div class="theme">
+		<a href="http://localhost:4343/go_full?tray=toonadv">
+		<img src="../assets/themelist/Toon_Adventure.png">
+		<div>Toon Adventure&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=underdog">
+		<img src="../assets/themelist/UnderDog.png">
+		<div>Underdog&#8482;</div>
+		</a>
+		</div>
+        <div class="theme">
+		<a href="http://localhost:4343/go_full?tray=willie">
+		<img src="../assets/themelist/Willie_Nelson.jpg">
+		<div>Willie Nelson&#8482;</div>
+		</a>
+		</div>
+		</div></center><br>
+        <center><div class="theme">
+		<a href="http://localhost:4343/go_full?tray=zimmertwins">
+		<img src="../assets/themelist/Zimmer_Twins.jpg">
+		<div>Zimmer Twins&#8482;</div>
+		</a>
+		</div></center><br>
+		<center><h2>Developer themes</h2></center>
+        <center><div class="theme">
+		<a href="http://localhost:4343/go_full?tray=street">
+		<img src="../assets/themelist/Street.png">
+		<div>Street</div>
+		</a>
+		</div></center><br><br>
+		<center><a href="http://localhost:4343/go_full" class="button_big">Proceed to video maker without choosing a theme</a></center><br>
+		<center><p>AKON &copy; Akonik Label Group/BMG/Republic Records<br>Ben 10 &copy; The Cartoon Network, Inc., A WarnerMedia Company<br>Blood On The Dance Floor &copy; Dark Fantasy Records<br>It's Happy Bunny &copy; Jim Benton<br>Chowder &copy; The Cartoon Network Inc., A WarnerMedia Company<br>Domo &copy; NHK<br>SuperRica & Rashy &copy; Dark Horse Comics<br>Street Fighter &copy; CAPCOM<br>Star Trek &copy; ViacomCBS<br>Toon Adventure &copy; The Cartoon Network, Inc., A WarnerMedia Company<br>Underdog &copy; DreamWorks Classics<br>Willie Nelson &copy; RCA Records/Atlantic Records/Columbia Records<br>Zimmer Twins &copy; Lost The Plot Productions, LLC/Zinc Roe</p></center><br>
+    </main><br>
+	<footer>
+	<nav id="foot-left">
+		<a href="https://localhost:4664/faq.html">FAQ</a>
+        <a href="https://wrappershop.ga/">Wrapper Shop</a>
+		<a href="https://discord.gg/yhGAetN">W:O Discord</a>
+	</nav>
+	<nav id="foot-right">
+		<a href="https://localhost:4664">Server Page</a>
+		<a href="https://localhost:4664/caillou.html">Caillou</a>
+	</nav>
+    </footer>
+	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
+		<input id='movie_file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
+	</form>
+	<!-- <form enctype='multipart/form-data' action='/upload_character' method='post'>
+		<input id='character_file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
+	</form> -->
+	<script>
+		var json;
+		var tbody = document.getElementsByTagName('tbody')[0];
+		var loadMore = document.getElementById('load_more');
+		const listReq = new XMLHttpRequest();
+		listReq.open('GET', '/movieList');
+		listReq.send();
+
+		var C = 0;
+		function loadRows() {
+			let c = C; C += 69;
+			for (; c < C; c++) {
+				if (c > json.length - 1) {
+					loadMore.remove();
+					break;
+				}
+
+				const tbl = json[c];
+				const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
+				tbody.insertAdjacentHTML('beforeend',
+					'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + ' (' + tbl.id + ')</div><div>Description: ' + tbl.desc + '<br>' + tbl.durationString + '</div></div></td><td><span>' + date + '</span></td><td><a href="javascript:;" onclick="popup(\'' + tbl.id + '\')"></a><a href="/go_full?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+			}
+		}
+
+		loadMore.onclick = loadRows;
+		listReq.onreadystatechange = function (e) {
+			if (listReq.readyState != 4) return;
+			json = JSON.parse(listReq.responseText);
+			loadRows();
+		}
+
+		function popup(id) {
+			window.open('/player?movieId=' + id, 'MsgWindow', 'width=1280,height=723,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
+		}
+	</script>
+</body>

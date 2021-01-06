@@ -1,0 +1,212 @@
+{
+	"GET": {
+		"/index.html": {
+			"headers": {
+				"Location": "/dashboard/videos"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
+		"/$": {
+			"headers": {
+				"Location": "/dashboard/videos"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
+		"/goapi/getAssetTags": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "111"
+		},
+		"/crossdomain.xml": {
+			"headers": {
+				"Content-Type": "text/x-cross-domain-policy"
+			},
+			"content": "<cross-domain-policy><allow-access-from domain=\"*\"/></cross-domain-policy>"
+		},
+		"/cc.swf": {},
+		"/go_full.swf": {},
+		"/favicon.ico": {},
+		"/char-default\\.png": {
+			"headers": {
+				"Content-Type": "image/png"
+			},
+			"content": ""
+		},
+		"dashboard/(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"html/(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		}
+	},
+	"POST": {
+		"/goapi/getUserWatermarks/": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "<?xml encoding=\"UTF-8\"?><watermarks><current/><preview/></watermarks>"
+		},
+		"/goapi/getUserFontList/": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "{\"status\":\"\"}"
+		},
+		"/goapi/getMovieInfo/": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "<?xml encoding=\"UTF-8\"?><watermarks><watermark style=\"g4s\"/></watermarks>"
+		},
+		"/api_v2/asset/get": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "1"
+		},
+		"/goapi/rebuildTTS/": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "1"
+		},
+		"/goapi/getWaveform/": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "1"
+		},
+		"/goapi/saveWaveform/": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			},
+			"content": "1"
+		}
+	},
+	"pages": {
+		"/videomaker/full": "<iframe style='display:none'name='dummy'></iframe><form style='display:none'id='uploadbanner'enctype='multipart/form-data'method='post'action='/upload_asset'target='dummy'><input type='text'name='params'/><input id='fileupload'name='import'type='file'onchange='importComplete(this)'accept='.mp3,.wav,.png,.jpg'/><input type='submit'value='submit'id='submit'/></form><script>interactiveTutorial={neverDisplay:function(){return true}};function studioLoaded(arg){console.log(arg)}function initPreviewPlayer(dataXmlStr, startFrame) {
+        savePreviewData(dataXmlStr);
+
+        if (typeof startFrame == 'undefined') {
+            startFrame = 1;
+        } else {
+            startFrame = Math.max(1, parseInt(startFrame));
+        }
+
+        previewSceen();
+        jQuery("#previewPlayerContainer").show();
+
+        createPreviewPlayer("playerdiv", {
+            height: 360,
+            width: 640,
+            player_url: "https://web.archive.org/web/20180930132917/https://d2qrjeyl4jwu9j.cloudfront.net/animation/cce25167cb1d3404/player.swf",
+            quality: "high"
+        }, {
+            movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
+            movieLid: "8", movieTitle: "", movieDesc: "", userId: "", username: "", uemail: "",
+            apiserver: "https://web.archive.org/web/20180930132917/https://goanimate4schools.com/", thumbnailURL: "", copyable: "0", isPublished: "0", ctc: "go", tlang: "en_US", is_private_shared: "0",
+            autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
+            utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
+                        s3base: "https://web.archive.org/web/20180930132917/https://s3.amazonaws.com/fs.goanimate4schools.com/",
+                        ratingCount: "", fb_app_url: "https://web.archive.org/web/20180930132917/https://goanimate4schools.com/", numContact: 0, isInitFromExternal: 1, storePath: "https://web.archive.org/web/20180930132917/https://d2qrjeyl4jwu9j.cloudfront.net/store/4e75f501cfbf51e3/<store>", clientThemePath: "https://web.archive.org/web/20180930132917/https://d2qrjeyl4jwu9j.cloudfront.net/static/642cd772aad8e952/<client_theme>", animationPath: "https://web.archive.org/web/20180930132917/https://d2qrjeyl4jwu9j.cloudfront.net/animation/cce25167cb1d3404/",
+            startFrame: startFrame
+        });
+    }function exitStudio(){window.location='/html/list.html'}const fu=document.getElementById('fileupload'),sub=document.getElementById('submit');function showImporter(){fu.click()};function importComplete(obj){const file=obj.files[0];if(file!=undefined){const ext=file.name.substring(file.name.lastIndexOf('.')+1);var params=flashvars.presaveId+'.';if(ext=='mp3'||ext=='wav'){var c;while(c!='vo'&&c!='se'&&c!='mu'){c=prompt('Would you like to upload this as a voiceover (\"vo\"), sound effect (\"se\"), or as music (\"mu\")?').toLowerCase()}params+=c}else if(ext=='jpg'||ext=='png'){var c;while(c!='bg'&&c!='prop'){c=prompt('Would you like to upload this as a background (\"bg\") or as a prop (\"prop\")?').toLowerCase()}params+=c}obj.parentElement.firstChild.value=params+'.'+ext;sub.click();return true}}</script>",
+		"/character_creator/new_char/": "<script>function characterSaved(){window.location='/character_creator'}</script>"
+	}
+}
+
+
+    var studioApiReady = false;
+    var videoTutorial = null;
+
+    function studioLoaded() {
+        studioApiReady = true;
+        $(document).trigger('studioApiReady');
+    };
+    $(document).ready(function() {
+        if (enable_full_screen) {
+
+            if (!true) {
+                $('#studio_container').css('top', '0px');
+            }
+            $('#studio_container').show();
+            $('.site-footer').hide();
+            $('#studioBlock').css('height', '1800px');
+
+            if (false) {
+                checkCopyMovie('javascript:proceedWithFullscreenStudio()', '');
+            } else if (false) {
+                checkEditMovie('');
+            } else {
+                proceedWithFullscreenStudio();
+            }
+
+            $(window).on('resize', function() {
+                ajust_studio();
+            });
+            $(window).on('studio_resized', function() {
+                if (show_cc_ad) {
+                    _ccad.refreshThumbs();
+                }
+            });
+
+            if (studioApiReady) {
+                var api = studioApi($('#studio_holder'));
+                api.bindStudioEvents();
+            }
+            $('.ga-importer').prependTo($('#studio_container'));
+        } else {
+            $('#studioBlock').flash(studio_data);
+        }
+        // Video Tutorial
+        videoTutorial = new VideoTutorial($("#video-tutorial"));
+    })
+    // restore studio when upsell overlay hidden
+    .on('hidden', '#upsell-modal', function(e) {
+        if ($(e.target).attr('id') == 'upsell-modal') {
+            restoreStudio();
+        }
+    })
+    .on('studioApiReady', function() {
+        var api = studioApi($('#studio_holder'));
+        api.bindStudioEvents();
+    })
+    jQuery("#previewPlayerContainer, #video-tutorial").hide();
+
+    
+    function switchBackToStudio() {
+        try {
+            (jQuery("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();
+        } catch (err) {};
+        jQuery("#previewPlayerContainer").hide();
+        restoreStudio();
+        document.getElementById("Studio").onExternalPreviewPlayerCancel();
+    }
+    function publishStudio() {
+        try {
+            (jQuery("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();
+        } catch (err) {};
+        jQuery("#previewPlayerContainer").hide();
+        restoreStudio();
+        document.getElementById("Studio").onExternalPreviewPlayerPublish();
+    }
+    function exitStudio(share) {
+        loadedFullscreenStudio = false;
+    }
+
+    VideoTutorial.tutorials.composition = {
+        title: 'Composition Tutorial',
+        wistiaId: 'nuy96pslyp',
+    };
+    VideoTutorial.tutorials.enterexit = {
+        title: 'Enter and Exit Effects Tutorial',
+        wistiaId: 'fvjsa3jnzc',
+    }
